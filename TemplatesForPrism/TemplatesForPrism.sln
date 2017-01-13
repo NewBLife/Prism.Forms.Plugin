@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatesForPrism", "TemplatesForPrism\TemplatesForPrism.csproj", "{6FA32F58-A218-4BAC-889F-CAF971F0033B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectTemplates", "ProjectTemplates", "{22CF36CC-FB7F-483F-89F7-983EC782D098}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemTemplates", "ItemTemplates", "{1C73FAA1-460E-498E-BE33-A23085DF8492}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VsWizards", "VsWizards", "{E499EC97-CB43-4A26-B8BB-2FA09AC68C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismFormsPlugin", "ProjectTemplates\PrismFormsPlugin\PrismFormsPlugin.csproj", "{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FA32F58-A218-4BAC-889F-CAF971F0033B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA32F58-A218-4BAC-889F-CAF971F0033B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA32F58-A218-4BAC-889F-CAF971F0033B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA32F58-A218-4BAC-889F-CAF971F0033B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE} = {22CF36CC-FB7F-483F-89F7-983EC782D098}
+	EndGlobalSection
+EndGlobal

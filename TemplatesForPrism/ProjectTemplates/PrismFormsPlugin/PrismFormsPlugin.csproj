@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>14.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrismFormsPlugin</RootNamespace>
+    <AssemblyName>PrismFormsPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PrismPlugin.Droid\PrismPluginImplementation.cs" />
+    <None Include="PrismPlugin.Droid\Properties\AssemblyInfo.cs" />
+    <None Include="PrismPlugin.Droid\Resources\Resource.Designer.cs" />
+    <None Include="PrismPlugin.iOS\PrismPluginImplementation.cs" />
+    <None Include="PrismPlugin.iOS\Properties\AssemblyInfo.cs" />
+    <None Include="PrismPlugin.UWP\PrismPluginImplementation.cs" />
+    <None Include="PrismPlugin.UWP\Properties\AssemblyInfo.cs" />
+    <None Include="PrismPlugin.Abstractions\IPrismPlugin.cs" />
+    <None Include="PrismPlugin.Abstractions\Properties\AssemblyInfo.cs" />
+    <None Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PrismFormsPlugin.nuspec" />
+    <None Include="PrismPlugin.UWP\project.json" />
+    <None Include="PrismFormsPlugin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="PrismFormsPlugin.vstemplate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PrismPlugin.Droid\Prism.Forms.Plugin.Droid.vstemplate" />
+    <Content Include="PrismPlugin.Droid\Plugin.PrismPlugin.Android.csproj" />
+    <Content Include="PrismPlugin.Droid\Resources\AboutResources.txt" />
+    <Content Include="PrismPlugin.Droid\__TemplateIcon.ico" />
+    <Content Include="PrismPlugin.iOS\Prism.Forms.Plugin.iOS.vstemplate" />
+    <Content Include="PrismPlugin.iOS\Plugin.PrismPlugin.iOS.csproj" />
+    <Content Include="PrismPlugin.iOS\__TemplateIcon.ico" />
+    <Content Include="PrismPlugin.UWP\Prism.Forms.Plugin.UWP.vstemplate" />
+    <Content Include="PrismPlugin.UWP\Plugin.PrismPlugin.UWP.csproj" />
+    <Content Include="PrismPlugin.UWP\Properties\Plugin.PrismPlugin.UWP.rd.xml" />
+    <Content Include="PrismPlugin.UWP\__TemplateIcon.ico" />
+    <Content Include="PrismPlugin.Abstractions\Prism.Forms.Plugin.Abstractions.vstemplate" />
+    <Content Include="PrismPlugin.Abstractions\Plugin.PrismPlugin.Abstractions.csproj" />
+    <Content Include="PrismPlugin.Abstractions\__TemplateIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
