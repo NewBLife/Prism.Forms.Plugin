@@ -4,19 +4,23 @@
     <Identity Id="TemplatesForPrism.李暁賓.f2089856-389a-4a0a-abf4-72d6c503d052" Version="1.0" Language="en-US" Publisher="李暁賓" />
     <DisplayName>Plugin For Prism.Forms Templates</DisplayName>
     <Description xml:space="preserve">Contains all templates for creating a Plugin for Prism.Forms including Xamarin.iOS, Xamarin.Android, and UWP</Description>
+    <MoreInfo>https://github.com/NewBLife/Prism.Forms.Plugin/tree/master/TemplatesForPrism</MoreInfo>
+    <License>LICENSE.txt</License>
     <Icon>https://github.com/NewBLife/NewBlife.Core/blob/master/logo.ico</Icon>
     <Tags>xamarin, plugins, uwp, ios, android, xamarin.forms, prism.forms, plugins for prism.forms</Tags>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
-    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
-    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Ultimate" Version="[14.0,)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[11.0)" />
+    <InstallationTarget Version="[11.0,)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[11.0,)" Id="Microsoft.VisualStudio.Enterprise" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Ultimate" Version="[11.0,)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Premium" Version="[11.0,)" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="PrismFormsPlugin" d:TargetPath="|PrismFormsPlugin;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Prism.Forms.Plugin" d:TargetPath="|Prism.Forms.Plugin;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="PrismPlugin.Wizard" d:VsixSubPath="Assembly" Path="|PrismPlugin.Wizard|" AssemblyName="|PrismPlugin.Wizard;AssemblyName|" />
   </Assets>
 </PackageManifest>

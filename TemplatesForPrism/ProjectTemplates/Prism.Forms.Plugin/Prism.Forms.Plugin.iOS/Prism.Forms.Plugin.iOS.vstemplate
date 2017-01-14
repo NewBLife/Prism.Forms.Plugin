@@ -1,0 +1,31 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Prism.Forms.Plugin.iOS</Name>
+    <Description>Implementation for Prism.Forms.Plugin iOS</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Prism.Forms.Plugin.iOS</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <CreateInPlace>true</CreateInPlace>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.iOS.csproj" File="Prism.Forms.Plugin.iOS.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectgroupname$Implementation.cs">PrismFormsPluginImplementation.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>PrismPlugin.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2335488e79a16da</Assembly>
+    <FullClassName>PrismPlugin.Wizard.SafeProjectGroupName</FullClassName>
+  </WizardExtension>
+</VSTemplate>

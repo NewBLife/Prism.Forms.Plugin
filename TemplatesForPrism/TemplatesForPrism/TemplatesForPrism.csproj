@@ -44,17 +44,28 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjectTemplates\PrismFormsPlugin\PrismFormsPlugin.csproj">
-      <Project>{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}</Project>
-      <Name>PrismFormsPlugin</Name>
+    <ProjectReference Include="..\ProjectTemplates\Prism.Forms.Plugin\Prism.Forms.Plugin.csproj">
+      <Project>{B97BC798-C3F6-40B3-9854-F1BF99BD70B6}</Project>
+      <Name>Prism.Forms.Plugin</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\VsWizards\PrismPlugin.Wizard\PrismPlugin.Wizard.csproj">
+      <Project>{553E3227-9A71-45AA-9114-1D9EE9D3BB20}</Project>
+      <Name>PrismPlugin.Wizard</Name>
+      <VSIXSubPath>Assembly</VSIXSubPath>
+      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

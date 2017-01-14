@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemTemplates", "ItemTempla
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VsWizards", "VsWizards", "{E499EC97-CB43-4A26-B8BB-2FA09AC68C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismFormsPlugin", "ProjectTemplates\PrismFormsPlugin\PrismFormsPlugin.csproj", "{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismPlugin.Wizard", "VsWizards\PrismPlugin.Wizard\PrismPlugin.Wizard.csproj", "{553E3227-9A71-45AA-9114-1D9EE9D3BB20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Forms.Plugin", "ProjectTemplates\Prism.Forms.Plugin\Prism.Forms.Plugin.csproj", "{B97BC798-C3F6-40B3-9854-F1BF99BD70B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,15 +25,20 @@ Global
 		{6FA32F58-A218-4BAC-889F-CAF971F0033B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FA32F58-A218-4BAC-889F-CAF971F0033B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FA32F58-A218-4BAC-889F-CAF971F0033B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553E3227-9A71-45AA-9114-1D9EE9D3BB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553E3227-9A71-45AA-9114-1D9EE9D3BB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553E3227-9A71-45AA-9114-1D9EE9D3BB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553E3227-9A71-45AA-9114-1D9EE9D3BB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B97BC798-C3F6-40B3-9854-F1BF99BD70B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97BC798-C3F6-40B3-9854-F1BF99BD70B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97BC798-C3F6-40B3-9854-F1BF99BD70B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97BC798-C3F6-40B3-9854-F1BF99BD70B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{483BD493-CCFF-4AD9-9998-8CE14D01D3FE} = {22CF36CC-FB7F-483F-89F7-983EC782D098}
+		{553E3227-9A71-45AA-9114-1D9EE9D3BB20} = {E499EC97-CB43-4A26-B8BB-2FA09AC68C45}
+		{B97BC798-C3F6-40B3-9854-F1BF99BD70B6} = {22CF36CC-FB7F-483F-89F7-983EC782D098}
 	EndGlobalSection
 EndGlobal
