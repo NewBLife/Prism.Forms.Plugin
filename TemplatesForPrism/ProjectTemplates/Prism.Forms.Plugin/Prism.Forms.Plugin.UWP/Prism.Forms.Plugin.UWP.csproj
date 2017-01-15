@@ -114,8 +114,8 @@
     <EmbeddedResource Include="Properties\$safeprojectgroupname$.UWP.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$safeprojectgroupname$\$safeprojectgroupname$.csproj">
-      <Name>$safeprojectgroupname$</Name>
+    <ProjectReference Include="..\$safeprojectgroupname$.Abstractions\$safeprojectgroupname$.Abstractions.csproj">
+      <Name>$safeprojectgroupname$.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

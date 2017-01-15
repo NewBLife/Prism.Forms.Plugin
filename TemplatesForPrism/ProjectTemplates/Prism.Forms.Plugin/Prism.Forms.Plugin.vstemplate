@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Plugin for Prism.Forms</Name>
     <Description>Creates all files necessary to create a plugin for Prism.Forms</Description>
@@ -8,19 +8,17 @@
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <SortOrder>30</SortOrder>
     <TemplateID>16bac5e1-199d-4e08-9ed3-2ef287221be1</TemplateID>
-    <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>Prism.Forms.Plugin</DefaultName>
+    <DefaultName>PrismFormsPlugin</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="$safeprojectname$.csproj"  File="Prism.Forms.Plugin.Abstractions.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="I$safeprojectname$.cs">IPrismFormsPlugin.cs</ProjectItem>
-      <Folder Name="Properties" TargetFolderName="Properties">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      </Folder>
-    </Project>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Abstractions">
+        Prism.Forms.Plugin.Abstractions\Prism.Forms.Plugin.Abstractions.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
   </TemplateContent>
   <WizardExtension>
     <Assembly>PrismPlugin.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2335488e79a16da</Assembly>

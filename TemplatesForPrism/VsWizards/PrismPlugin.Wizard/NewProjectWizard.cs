@@ -33,12 +33,29 @@ namespace PrismPlugin.Wizard
             if (_dialogResult.CreateUwp)
                 CreateProject(Target.UWP.ToString());
 
+            //if (_dialogResult.CreateNuspec)
+            //    CreateItem();
+
         }
+
+        void CreateItem()
+        {
+            string name = $"nuspecs";
+
+            string projectPath = System.IO.Path.Combine(_solutionDir, name);
+
+            string templateName = $"Prism.Forms.Plugin.Nuspec";
+
+            string templatePath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(_templateDir), $"{templateName}.zip\\{templateName}.vstemplate");
+
+            _dte.Solution.AddFromTemplate(templatePath, projectPath, name);
+        }
+
         void CreateProject(string platform)
         {
             string name = $"{_projectName}.{platform}";
 
-            string projectPath = System.IO.Path.Combine(_solutionDir, System.IO.Path.Combine(_projectName, name));
+            string projectPath = System.IO.Path.Combine(_solutionDir, Path.Combine(_projectName, name));
 
             string templateName = $"Prism.Forms.Plugin.{platform}";
 

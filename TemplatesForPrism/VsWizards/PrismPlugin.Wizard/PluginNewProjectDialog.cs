@@ -21,7 +21,7 @@ namespace PrismPlugin.Wizard
 
             Result.CreateUwp = chkUWP.Checked;
 
-            Result.CreatePCL = chkPCL.Checked;
+            Result.CreateNuspec = chkNuget.Checked;
         }
 
         private void btnCreate_Click(object sender, System.EventArgs e)
@@ -40,7 +40,7 @@ namespace PrismPlugin.Wizard
         public bool CreateAndroid { get; set; }
         public bool CreateiOS { get; set; }
         public bool CreateUwp { get; set; }
-        public bool CreatePCL { get; set; }
+        public bool CreateNuspec { get; set; }
         public bool Cancelled { get; set; }
     }
 }

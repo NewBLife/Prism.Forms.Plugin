@@ -80,7 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NewBlifes.snk" />
-    <None Include="Prism.Forms.Plugin.Abstractions.csproj" />
+    <None Include="Prism.Forms.Plugin.Abstractions\Prism.Forms.Plugin.Abstractions.csproj" />
     <None Include="Prism.Forms.Plugin.Droid\Prism.Forms.Plugin.Droid.csproj" />
     <VSTemplate Include="Prism.Forms.Plugin.Droid\Prism.Forms.Plugin.Droid.vstemplate">
       <OutputSubPath>Prism\Plugin</OutputSubPath>
@@ -98,7 +98,7 @@
     </VSTemplate>
     <None Include="Prism.Forms.Plugin.UWP\Properties\Prism.Forms.Plugin.UWP.rd.xml" />
     <None Include="Prism.Forms.Plugin.UWP\__TemplateIcon.ico" />
-    <None Include="AssemblyInfo.cs" />
+    <None Include="Prism.Forms.Plugin.Abstractions\Properties\AssemblyInfo.cs" />
     <None Include="Prism.Forms.Plugin.Droid\PrismFormsPluginImplementation.cs" />
     <None Include="Prism.Forms.Plugin.Droid\Properties\AssemblyInfo.cs" />
     <None Include="Prism.Forms.Plugin.Droid\Resources\Resource.Designer.cs" />
@@ -109,7 +109,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="IPrismFormsPlugin.cs" />
+    <None Include="Prism.Forms.Plugin.Abstractions\IPrismFormsPlugin.cs" />
     <None Include="Prism.Forms.Plugin.ico" />
     <None Include="Prism.Forms.Plugin.UWP\project.json" />
   </ItemGroup>
@@ -130,6 +130,10 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Prism.Forms.Plugin.Abstractions\Prism.Forms.Plugin.Abstractions.vstemplate" />
+    <None Include="Prism.Forms.Plugin.Abstractions\__TemplateIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

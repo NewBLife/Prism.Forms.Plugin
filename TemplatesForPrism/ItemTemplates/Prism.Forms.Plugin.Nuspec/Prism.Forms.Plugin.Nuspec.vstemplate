@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Plugin nuspec for Prism.Forms</Name>
+    <Description>Create a nuspec file for Prism.Forms.Plugin solution</Description>
+    <Icon>Prism.Forms.Plugin.Nuspec.ico</Icon>
+    <TemplateID>325a0391-d11c-4432-8658-b70405881e87</TemplateID>
+    <ProjectType>General</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>PrismFormsPlugin.nuspec</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem TargetFileName="$fileinputname$.nuspec" ReplaceParameters="true">Prism.Forms.Plugin.nuspec</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

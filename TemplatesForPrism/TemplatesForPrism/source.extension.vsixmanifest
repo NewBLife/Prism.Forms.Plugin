@@ -22,5 +22,6 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="Prism.Forms.Plugin" d:TargetPath="|Prism.Forms.Plugin;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="PrismPlugin.Wizard" d:VsixSubPath="Assembly" Path="|PrismPlugin.Wizard|" AssemblyName="|PrismPlugin.Wizard;AssemblyName|" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="Prism.Forms.Plugin.Nuspec" d:TargetPath="|Prism.Forms.Plugin.Nuspec;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
   </Assets>
 </PackageManifest>

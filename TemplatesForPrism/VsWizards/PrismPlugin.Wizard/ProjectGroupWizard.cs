@@ -36,7 +36,11 @@ namespace PrismPlugin.Wizard
             if (projectGroupName.Value == null)
             {
                 var name = replacementsDictionary["$safeprojectname$"];
-                if (name.EndsWith(Target.Droid.ToString()))
+                if (name.EndsWith(Target.Abstractions.ToString()))
+                {
+                    projectGroupName.Value = name.Replace($".{Target.Abstractions.ToString()}", string.Empty);
+                }
+                else if (name.EndsWith(Target.Droid.ToString()))
                 {
                     projectGroupName.Value = name.Replace($".{Target.Droid.ToString()}", string.Empty);
                 }

@@ -39,8 +39,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$safeprojectgroupname$\$safeprojectgroupname$.csproj">
-      <Name>$safeprojectgroupname$</Name>
+    <ProjectReference Include="..\$safeprojectgroupname$.Abstractions\$safeprojectgroupname$.Abstractions.csproj">
+      <Name>$safeprojectgroupname$.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
