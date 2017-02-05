@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace PrismPlugin.Wizard
+namespace Prism.Forms.Plugin.Wizard
 {
     public partial class PluginNewProjectDialog : Form
     {

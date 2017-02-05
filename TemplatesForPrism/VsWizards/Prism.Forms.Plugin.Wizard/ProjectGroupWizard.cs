@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TemplateWizard;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace PrismPlugin.Wizard
+namespace Prism.Forms.Plugin.Wizard
 {
     public class SafeProjectGroupName : IWizard
     {

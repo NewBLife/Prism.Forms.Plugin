@@ -1,4 +1,4 @@
-﻿namespace PrismPlugin.Wizard
+﻿namespace Prism.Forms.Plugin.Wizard
 {
     partial class PluginNewProjectDialog
     {

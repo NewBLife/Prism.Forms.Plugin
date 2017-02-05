@@ -29,7 +29,7 @@
     </Project>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>PrismPlugin.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2335488e79a16da</Assembly>
-    <FullClassName>PrismPlugin.Wizard.SafeProjectGroupName</FullClassName>
+    <Assembly>Prism.Forms.Plugin.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2335488e79a16da</Assembly>
+    <FullClassName>Prism.Forms.Plugin.Wizard.SafeProjectGroupName</FullClassName>
   </WizardExtension>
 </VSTemplate>
